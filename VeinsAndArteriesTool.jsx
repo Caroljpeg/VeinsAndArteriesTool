@@ -7,7 +7,7 @@ function main() {
 
     var doc_setup = app.activeDocument;
     var doc = doc_setup;
-    var word = yourWord;
+    var word = 'yourWord';
     
     //find in a specified inDesign document (first parameter: 'doc') all the iterations of a specified word (second parameter: 'word') -> see line 153
     var resultsOfSearch = textFindWord(doc, word);
@@ -73,7 +73,7 @@ function main() {
         //create a line
         var graphicLine = doc.graphicLines.add();
 
-            //make the line pass through the anchor points of one of the paths defined
+            //make all the lines pass through the anchor points of the same path
             for (var j in paths.anchorsPath1) {
                 var point = graphicLine.paths[0].pathPoints[j];
                 if (j < 2) {
@@ -102,7 +102,7 @@ function main() {
             }
 
             //anchorPath2
-            if (yourCondition2) {
+            if (yourCondition) {
                 for (var k in paths.anchorsPath2) {
                     var point = graphicLine.paths[0].pathPoints[k];
                     if (k < 2) {
@@ -116,7 +116,7 @@ function main() {
             }
 
             //define as many variants as you wish adding
-            //if (yourCondition) {
+            //if (yourCondition2) {
                 //for (var l in paths.anchorsPath){
                     //if (l < 2) {
                         //point.anchor = paths.anchorsPath[l];
