@@ -21,16 +21,16 @@ once you've done it open the VeinsAndArteriesTool.jsx file in your code editor.
 1. ### general instructions
    1. define the width and height of your page at line 5-6
       
-   3. define the word you want the lines to start from at line 10
+   2. define the word you want the lines to start from at line 10
       
-   5. define the x and y value for the point you want the lines to converge (line 18-19)
+   3. define the x and y value for the point you want the lines to converge (line 18-19)
       
-   7. define the x and y value of the anchor points you want the lines to pass through (lines 17-37).  
+   4. define the x and y value of the anchor points you want the lines to pass through (lines 17-37).  
    for each value you need, you just have to add `var x = yourXValue;`  and/or `var y = yourYValue;`  
    in simple systems you may skip this step and specify those values during the following one.
 
 2. ### if you want all the lines to follow the same path
-   4. combine the x and y values you defined before for a single anchorPath in the array paths (lines 47-69).
+   5. combine the x and y values you defined before for a single anchorPath in the array paths (lines 47-69).
    your code should look like this:
    ```
    var paths = {
@@ -43,10 +43,10 @@ once you've done it open the VeinsAndArteriesTool.jsx file in your code editor.
    }
    ```
    
-   5. use the code provided at lines 76-86.
+   6. use the code provided at lines 76-86.
 
 3. ### if you want  the lines to follow different paths according to conditions of your choice
-   4. repeat the process described in 2.iv as many times as you wish, remembering to assign different names to the paths.
+   5. repeat the process described in 2.iv as many times as you wish, remembering to assign different names to the paths.
       
    6. use the code provided at lines 90-129, replacing `yourCondition` and `yourCondition2` with your own conditions
       and defining, for every condition, the path you want to be used in that specific case.
