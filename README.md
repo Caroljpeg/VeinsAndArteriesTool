@@ -23,7 +23,7 @@ once you've done it open the VeinsAndArteriesTool.jsx file in your code editor.
       
    3. define the word you want the lines to start from at line 10
       
-   5. define the x and y value for the point you want the lines and with (line 18-19)
+   5. define the x and y value for the point you want the lines to converge (line 18-19)
       
    7. define the x and y value of the anchor points you want the lines to pass through (lines 17-37).  
    for each value you need, you just have to add `var x = yourXValue;`  and/or `var y = yourYValue;`  
